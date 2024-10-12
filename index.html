@@ -1,64 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simple HTML Website</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f4;
-      }
-      header {
-        background: #35424a;
-        color: white;
-        padding: 20px;
-        text-align: center;
-      }
-      main {
-        padding: 20px;
-        background: white;
-        max-width: 800px;
-        margin: 20px auto;
-        border-radius: 5px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      }
-      footer {
-        text-align: center;
-        padding: 10px;
-        background: #35424a;
-        color: white;
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Welcome to My Simple Website</h1>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Simple Portfolio Layout</title>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <header>
+            <p>Simple Portfolio Layout</p>
+        </header>
 
-    <main>
-      <h2>About This Site</h2>
-      <p>
-        This is a simple HTML website created as a demo. You can customize it to
-        fit your needs!
-      </p>
+        <main>
+            <div class="hero">
+                <div class="left">
+                    <div class="aboutText">
+                        <h1 class="greeting">Hi,</h1>
+                        <h1 class="name">
+                            I am a <span style="color: orange">Developer</span>
+                        </h1>
+                        <p class="about">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Assumenda quaerat mollitia perferendis, non ut
+                            officiis Assumenda quaerat mollitia perferendis, non
+                            ut officiis
+                        </p>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="prof.jpg" alt="" />
+                </div>
+            </div>
+        </main>
 
-      <h3>Features</h3>
-      <ul>
-        <li>Responsive Design</li>
-        <li>Simple Layout</li>
-        <li>Easy to Customize</li>
-        <li>Flexible to add Products</li>
-      </ul>
-    </main>
+        <!-- <section class="about_sec"></section> -->
 
-    <footer>
-      <p>&copy; 2024 Simple HTML Website</p>
-    </footer>
-  </body>
+        <footer>
+            <p>&copy; 2024 Simple HTML Website</p>
+        </footer>
+    </body>
 </html>

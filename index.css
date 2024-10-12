@@ -1,0 +1,104 @@
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100vw;
+    color: white;
+    background-color: black;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 25px;
+    letter-spacing: 3px;
+    height: 5vh;
+}
+main .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 95vh;
+    padding: 0vh 10vh;
+}
+main .hero .left,
+.right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .hero .left h1 {
+    font-size: 4rem;
+}
+main .hero .right img {
+    height: 55%;
+    width: 55%;
+    border-radius: 100%;
+    object-fit: fill;
+}
+/* .about_sec {} */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #35424a;
+    color: white;
+}
+
+/* Tablets and smaller desktops */
+@media (max-width: 1200px) {
+    main .hero {
+        padding: 0 3vh;
+    }
+    main .hero .left h1 {
+        font-size: 3.5rem;
+    }
+    main .hero .left p {
+        font-size: 1.5rem;
+    }
+    main .hero .right img {
+        height: 40%;
+        width: 70%;
+    }
+}
+/* Landscape phones and large phones */
+@media (max-width: 850px) {
+    main .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 4vh;
+    }
+    main .hero .left,
+    .right {
+        width: 100%;
+        height: auto;
+    }
+    main .hero .left h1 {
+        font-size: 3rem;
+    }
+    main .hero .left p {
+        font-size: 1.5rem;
+    }
+    main .hero .right img {
+        height: 70%;
+        width: 70%;
+    }
+}
+/* Portrait phones and small screens */
+@media (max-width: 480px) {
+    main .hero .left h1 {
+        font-size: 2rem;
+    }
+    main .hero .right img {
+        height: 80%;
+        width: 80%;
+    }
+    footer {
+        font-size: 14px;
+    }
+}
