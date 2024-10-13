@@ -7,36 +7,93 @@
         <link rel="stylesheet" href="index.css" />
     </head>
     <body>
+        <!-- Navigation bar -->
         <header>
-            <p>Simple Portfolio Layout</p>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </header>
 
-        <main>
-            <div class="hero">
-                <div class="left">
-                    <div class="aboutText">
-                        <h1 class="greeting">Hi,</h1>
-                        <h1 class="name">
-                            I am a <span style="color: orange">Developer</span>
-                        </h1>
-                        <p class="about">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Assumenda quaerat mollitia perferendis, non ut
-                            officiis Assumenda quaerat mollitia perferendis, non
-                            ut officiis
-                        </p>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <h1>Hi, I'm [Your Name]</h1>
+            <p>Web Developer | Designer | Creator</p>
+            <a href="#contact" class="cta">Hire Me</a>
+        </section>
+
+        <!-- About and Skill Section -->
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>Brief bio about your skills, experience, and what you do.</p>
+            <div class="skills">
+                <h3>My Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill">
+                        <img
+                            src="https://www.svgrepo.com/show/197982/html.svg"
+                            alt="HTML"
+                        />
+                        <h4>HTML</h4>
                     </div>
-                </div>
-                <div class="right">
-                    <img src="prof.jpg" alt="" />
+                    <div class="skill">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+                            alt="CSS"
+                        />
+                        <h4>CSS</h4>
+                    </div>
+                    <div class="skill">
+                        <img
+                            src="https://cdn.worldvectorlogo.com/logos/javascript-1.svg"
+                            alt="JavaScript"
+                        />
+                        <h4>JavaScript</h4>
+                    </div>
+                    <div class="skill">
+                        <img
+                            src="https://www.svgrepo.com/show/358128/react.svg"
+                            alt="React"
+                        />
+                        <h4>React</h4>
+                    </div>
+                    <!-- Add more skills as needed -->
                 </div>
             </div>
-        </main>
+        </section>
 
-        <!-- <section class="about_sec"></section> -->
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project">
+                    <img src="prof.jpg" alt="Project 1" />
+                    <h3>Project Title</h3>
+                    <p>Description of the project.</p>
+                    <a href="#">View Project</a>
+                </div>
+                <!-- Add more project blocks as needed -->
+            </div>
+        </section>
 
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <form action="submit">
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <!-- Footer -->
         <footer>
-            <p>&copy; 2024 Simple HTML Website</p>
+            <p>© 2024 Your Name. All Rights Reserved.</p>
         </footer>
     </body>
 </html>
