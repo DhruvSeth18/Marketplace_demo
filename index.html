@@ -1,64 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simple HTML Website</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f4;
-      }
-      header {
-        background: #35424a;
-        color: white;
-        padding: 20px;
-        text-align: center;
-      }
-      main {
-        padding: 20px;
-        background: white;
-        max-width: 800px;
-        margin: 20px auto;
-        border-radius: 5px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      }
-      footer {
-        text-align: center;
-        padding: 10px;
-        background: #35424a;
-        color: white;
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Welcome to My Simple Website</h1>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Simple Portfolio Layout</title>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-      <h2>About This Site</h2>
-      <p>
-        This is a simple HTML website created as a demo. You can customize it to
-        fit your needs!
-      </p>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <h1>Hi, I'm [Your Name]</h1>
+            <p>Web Developer | Designer | Creator</p>
+            <a href="#contact" class="cta">Hire Me</a>
+        </section>
 
-      <h3>Features</h3>
-      <ul>
-        <li>Responsive Design</li>
-        <li>Simple Layout</li>
-        <li>Easy to Customize</li>
-        <li>Flexible to add Products</li>
-      </ul>
-    </main>
+        <!-- About and Skill Section -->
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>Brief bio about your skills, experience, and what you do.</p>
+            <div class="skills">
+                <h3>My Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill">
+                        <img
+                            src="https://www.svgrepo.com/show/197982/html.svg"
+                            alt="HTML"
+                        />
+                        <h4>HTML</h4>
+                    </div>
+                    <div class="skill">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+                            alt="CSS"
+                        />
+                        <h4>CSS</h4>
+                    </div>
+                    <div class="skill">
+                        <img
+                            src="https://cdn.worldvectorlogo.com/logos/javascript-1.svg"
+                            alt="JavaScript"
+                        />
+                        <h4>JavaScript</h4>
+                    </div>
+                    <div class="skill">
+                        <img
+                            src="https://www.svgrepo.com/show/358128/react.svg"
+                            alt="React"
+                        />
+                        <h4>React</h4>
+                    </div>
+                    <!-- Add more skills as needed -->
+                </div>
+            </div>
+        </section>
 
-    <footer>
-      <p>&copy; 2024 Simple HTML Website</p>
-    </footer>
-  </body>
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project">
+                    <img src="prof.jpg" alt="Project 1" />
+                    <h3>Project Title</h3>
+                    <p>Description of the project.</p>
+                    <a href="#">View Project</a>
+                </div>
+                <!-- Add more project blocks as needed -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <form action="submit">
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2024 Your Name. All Rights Reserved.</p>
+        </footer>
+    </body>
 </html>
