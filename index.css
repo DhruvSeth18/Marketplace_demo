@@ -77,7 +77,7 @@ nav ul li a:hover {
 
 /* About and Skill Section */
 .about {
-    padding: 4rem 2rem;
+    padding: 2rem 1rem;
     text-align: center;
     background: #f0f0f0;
 }
@@ -90,6 +90,174 @@ nav ul li a:hover {
     max-width: 700px;
     margin: 0 auto;
 }
+
+.about span{
+    color: black;
+    font-weight: bold;
+    scale: 0.85;
+    margin-top: 10vh;
+    background-color: #F4a261;
+    display: inline-block;
+    padding: 0.5rem 6rem;
+    clip-path: polygon(100% 0,93% 50%,100% 99%,0% 100%,7% 50%,0%0%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* About Section Styles */
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-image {
+    border-radius: 15px;
+    max-width: 100%;
+}
+
+.about-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+/* Styling for the about-section */
+.about-section {
+    height: 70vh;
+    display: flex;
+}
+
+.about-section .left-panel {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section .right-panel {
+    flex: 1;
+    /* background-color: crimson; */
+    display: flex;
+    padding-right: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section .right-panel .content {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    height: 100%;
+}
+
+.about-section .right-panel .content .top-section {
+    text-align: left;
+    font-size: 25px;
+}
+
+.about-section .right-panel .content .bottom-section {
+    padding:2px; 
+    margin-top: 10px; 
+    text-align: justify; 
+    font-size: 19px;
+}
+.about-section .right-panel .content .bottom-section p{
+    margin-top: 10px;
+}
+@media (max-width: 1250px) {
+    .about-section{
+        height: 75vh;
+        padding: 25px 25px;
+    }
+}
+@media (max-width: 950px) {
+    .about-section{
+        height: 65vh;
+        padding: 25px 25px;
+    }
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-image {
+        margin-bottom: 20px;
+    }
+    .about-section{
+        flex-direction: column;
+        padding: 0;
+        height: 95vh;
+    }
+    .about-section .left-panel{
+        max-height: 350px;
+    }
+    .about-section .right-panel .content{
+        display: flex;
+        padding: 0px 5px;
+        margin-top: 80px;
+        justify-content: flex-start;
+    }
+    .about-section .right-panel{
+        padding: 10px;
+    }
+    .about-section .right-panel .content .top-section {
+        font-size: 23px;
+    }
+    
+    .about-section .right-panel .content .bottom-section {
+        padding:2px; margin-top: 10px; text-align: justify; font-size: 19px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .skills {
     margin-top: 2rem;
@@ -106,6 +274,7 @@ nav ul li a:hover {
 }
 .skill {
     text-align: center;
+    cursor: pointer;
     width: 140px;
 }
 .skill img {
@@ -125,7 +294,7 @@ nav ul li a:hover {
 /* Projects Section */
 .projects {
     padding: 4rem 2rem;
-    background: #fff;
+    background: #f0f0f0;
     text-align: center;
 }
 .projects h2 {
@@ -138,7 +307,7 @@ nav ul li a:hover {
     justify-content: space-around;
 }
 .project {
-    background: #f4f4f4;
+    background: #ffffff;
     margin: 1rem;
     padding: 1rem;
     border-radius: 8px;
